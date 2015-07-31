@@ -11,6 +11,6 @@ describe('Package', function () {
   it('should throw error if no connect was passed', function () {
     expect(function () {
       connectUva(null);
-    }).to.throw(Error, 'connect was not passed to BograchStore wrapper');
+    }).to.throw(Error, 'connect was not passed to UvaStore wrapper');
   });
 });
