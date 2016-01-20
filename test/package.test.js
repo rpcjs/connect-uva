@@ -1,16 +1,14 @@
-'use strict';
+'use strict'
+const expect = require('chai').expect
+const connectUva = require('..')
 
-var expect = require('chai').expect;
-var connectUva = require('..');
+describe('Package', function() {
+  let connect = {
+    Store: {},
+  }
 
-describe('Package', function () {
-  var connect = {
-    Store: {}
-  };
-
-  it('should throw error if no connect was passed', function () {
-    expect(function () {
-      connectUva(null);
-    }).to.throw(Error, 'connect was not passed to UvaStore wrapper');
-  });
-});
+  it('should throw error if no connect was passed', function() {
+    expect(() => connectUva(null)).to
+      .throw(Error, 'connect was not passed to UvaStore wrapper')
+  })
+})

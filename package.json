@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/zkochan/connect-bograch.git"
+    "url": "git://github.com/rpcjs/connect-uva.git"
   },
   "license": "MIT",
   "devDependencies": {
